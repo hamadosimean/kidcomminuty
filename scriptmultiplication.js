@@ -14,15 +14,17 @@ function checkAnswer() {
   var userAnswer = document.getElementById("answer").value;
   var result = document.getElementById("result");
   if (userAnswer == correctAnswer) {
-    result.innerHTML = "Correcte!";
+    result.innerHTML = "✅ Bravo!";
     result.style.color = "green";
   } else {
-    result.innerHTML = "Incorrect. Essai encore.";
+    result.innerHTML = "❌ Incorrecte. Essai encore.";
     result.style.color = "red";
   }
 }
 
 function help(){
   
-  document.getElementById('help').innerHTML="<strong>Rafraichir la page  à chaque fois pour avoir un nouveau calcul </strong>"
+  document.getElementById('help').innerHTML="<strong>Rafraichir la page  à chaque fois pour avoir un nouveau calcul </strong>";
+    document.getElementById('help').style.color='red';
+
 }
