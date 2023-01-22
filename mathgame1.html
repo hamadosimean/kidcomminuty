@@ -53,7 +53,7 @@
   <div class="container">
     <section>
       <h1>Cliquez sur les gens</h1>
-      <img src="/kid/2219867.png" onclick="checkAnswer(this)" data-correct="yes">
+      <img src="2219867.png" onclick="checkAnswer(this)" data-correct="yes">
       <img src="983534.png" onclick="checkAnswer(this)" data-correct="no">
       <img src="2232688.png" onclick="checkAnswer(this)" data-correct="no">
     </section>
@@ -61,7 +61,7 @@
 
     <section>
       <h1>Cliquez sur le lapin</h1>
-      <img src="/kid/2219867.png" onclick="checkAnswer(this)" data-correct="no">
+      <img src="2219867.png" onclick="checkAnswer(this)" data-correct="no">
       <img src="4185015.png" onclick="checkAnswer(this)" data-correct="yes">
 
       <img src="2232688.png" onclick="checkAnswer(this)" data-correct="no">
@@ -69,7 +69,7 @@
 
     <section>
       <h1>Cliquez sur les livres</h1>
-      <img src="/kid/2219867.png" onclick="checkAnswer(this)" data-correct="no">
+      <img src="2219867.png" onclick="checkAnswer(this)" data-correct="no">
       <img src="983534.png" onclick="checkAnswer(this)" data-correct="no">
       <img src="2232688.png" onclick="checkAnswer(this)" data-correct="yes">
     </section>
@@ -103,11 +103,11 @@
   <script>
     function checkAnswer(clickedImg) {
       if (clickedImg.getAttribute("data-correct") == "yes") {
-        document.querySelector("#message").innerHTML = "✅Bravo!";
+        document.querySelector("#message").innerHTML = "✅B ravo!";
         document.querySelector("#message").style.display = "block";
         document.querySelector("#message").style.color = "green";
       } else {
-        document.querySelector("#message").innerHTML = "❌Essai encore";
+        document.querySelector("#message").innerHTML = "❌E ssai encore";
         document.querySelector("#message").style.display = "block";
         document.querySelector("#message").style.color = "red";
       }
